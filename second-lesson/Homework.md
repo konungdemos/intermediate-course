@@ -104,7 +104,7 @@ if (isAdmin) {
 ```
 * Напиши примитивную проверку логина и пароля, которая используется в роутерах, опираясь на схему:
 
-![Схема работы](https://github.com/MaximumStart/essential-course/blob/master/second-lesson/scheme.png)
+![Схема работы](https://github.com/MaximumStart/essential-course/blob/master/second-lesson/scheme.jpg)
 
 Красное — модальные окна (alert, prompt),
 Зеленое — введенные пользователем данные.
