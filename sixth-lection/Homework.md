@@ -24,6 +24,9 @@
 1. Как обратиться к родителю элемента? А к потомку?
 1. Опиши, какие методы и свойства используются для работы с классами?
 1. Какие методы создают новый элемент, текстовую ноду? А какие удаляют?
+1. Как работает метод `Element.matches()`?
+1. Зачем нужна библиотека [Modernizr](https://modernizr.com/)?
+1. Чем отличаются `Node.appendChild()`, `Node.insertBefore()` и `Element.insertAdjacentHTML()`?
 1. Что находится в свойстве `Element.innerHTML`? А `Element.outerHTML`? Ответь, чем отличаются два следующих типа вставки:
 
 ```js
@@ -40,9 +43,6 @@ el.appendChild(document.createTextNode('<strong>Alert!</strong> Error 404. Page 
 document.body.appendChild(el);
 
 ```  
-1. Как работает метод `Element.matches()`?
-1. Зачем нужна библиотека [Modernizr](https://modernizr.com/)?
-1. Чем отличаются `Node.appendChild()`, `Node.insertBefore()` и `Element.insertAdjacentHTML()`?
 
 ---
 
