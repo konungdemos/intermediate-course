@@ -15,21 +15,35 @@
 
 ## Вопросы
 
-* Что такое DOM?
-* Что такое узел (нода)? Какие существуют ноды?
-* Какие есть способы поиска элементов на странице?
-* Что возвращает метод `document.getElementById()`? А метод `document.querySelectorAll()`?
-* Как изменить стили элемента? Какая существует особенность с правилам, в названии которых есть дефис (border-radius, padding-left)?
-* Чем отличается коллекция от массива?
-* Как обратиться к родителю элемента? А к потомку?
-* Опиши, какие методы используются для [работы с классами](https://developer.mozilla.org/ru/docs/Web/API/Element/classList)? Что они делают?
-* Что находится в свойстве `Element.innerHTML`?
-* Как работает метод `Element.matches()`?
-* Зачем нужна библиотека [Modernizr](https://modernizr.com/)?
-* Какие методы создают новый элемент, текстовую ноду?
-* Чем отличаются `Node.appendChild()`, `Node.insertBefore()` и `Element.insertAdjacentHTML()`?
-* Какие два метода используются для удаления элементов?
+1. Что такое DOM?
+1. Что такое узел (нода)? Какие существуют ноды?
+1. Какие есть способы поиска элементов на странице?
+1. Что возвращает метод `document.getElementById()`? А метод `document.querySelectorAll()`?
+1. Как изменить стили элемента? Какая существует особенность с правилам, в названии которых есть дефис (`border-radius`, `padding-left`)? Какая особенность есть со свойством `float`? Можно ли задать элементу сразу несколько CSS-свойств?
+1. Чем отличается __HTMLCollection__ / __NodeList__ от массива?
+1. Как обратиться к родителю элемента? А к потомку?
+1. Опиши, какие методы и свойства используются для работы с классами?
+1. Какие методы создают новый элемент, текстовую ноду? А какие удаляют?
+1. Что находится в свойстве `Element.innerHTML`? А `Element.outerHTML`? Ответь, чем отличаются два следующих типа вставки:
+
+```js
+// (1)
+
+const el = document.createElement('p');
+el.innerHTML = '<strong>Alert!</strong> Error 404. Page not found.';
+document.body.appendChild(el);
+
+// (2)
+
+const el = document.createElement('p');
+el.appendChild(document.createTextNode('<strong>Alert!</strong> Error 404. Page not found.'));
+document.body.appendChild(el);
+
+```  
+1. Как работает метод `Element.matches()`?
+1. Зачем нужна библиотека [Modernizr](https://modernizr.com/)?
+1. Чем отличаются `Node.appendChild()`, `Node.insertBefore()` и `Element.insertAdjacentHTML()`?
 
 ---
 
-#### Расчетное время выполнения: 1 - 2 часа.
+#### Расчетное время выполнения: 2 - 4 часа.
